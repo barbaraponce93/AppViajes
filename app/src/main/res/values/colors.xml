@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="primary1">#FF735C</color>
+
+
+
+    <color name="primary_naranja">#F74E37</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#0B0B0B</color>
+
+    <color name="colorAccent">#E9F1FA</color>
+
+        <color name="violeta">#9B4D96</color> <!-- Ejemplo de código de color violeta -->
+        <color name="rosa">#F4A7C2</color>   <!-- Ejemplo de código de color rosa -->
+
+
+    <color name="colorGray">#D5D2D2</color>
+
+</resources>

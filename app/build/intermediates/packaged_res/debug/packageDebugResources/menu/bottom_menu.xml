@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+            />
+
+    <item
+        android:id="@+id/nav_buscar"
+        android:title="Buscar"
+        android:enabled="true"
+        android:icon="@drawable/ic_lupa1"
+
+        />
+
+
+    <item
+        android:id="@+id/nav_add"
+        android:title=""
+        android:enabled="false"/>
+
+
+
+
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Chat"
+        android:enabled="true"
+        android:icon="@drawable/ic_chat"
+
+        />
+
+    <item
+        android:id="@+id/nav_perfil"
+        android:title="Perfil"
+        android:enabled="true"
+        android:icon="@drawable/ic_persona"
+
+        />
+  
+</menu>

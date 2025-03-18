@@ -1,0 +1,5 @@
+com.example.movilproyectofinal.test.app-jetified-core-1.6.1-0 C:\Users\Pc\.gradle\caches\8.9\transforms\076757c8c6cef2d86ff5d6cdcf7dc1dc\transformed\jetified-core-1.6.1\res
+com.example.movilproyectofinal.test.app-androidTest-1 D:\Desktop\ProyectosAndroid\MovilProyectoFinal - porlasdudas\app\build\generated\res\resValues\androidTest\debug
+com.example.movilproyectofinal.test.app-mergeDebugAndroidTestResources-2 D:\Desktop\ProyectosAndroid\MovilProyectoFinal - porlasdudas\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.movilproyectofinal.test.app-mergeDebugAndroidTestResources-3 D:\Desktop\ProyectosAndroid\MovilProyectoFinal - porlasdudas\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.movilproyectofinal.test.app-debugAndroidTest-4 D:\Desktop\ProyectosAndroid\MovilProyectoFinal - porlasdudas\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
