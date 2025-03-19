@@ -11,7 +11,18 @@
         android:layout_width="match_parent"
         android:layout_height="260dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@drawable/detail3"
      >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolsDetail"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white"
+            app:title="@string/titulo_detail"
+            app:navigationIcon="@drawable/flecha_izquierda"
+
+            />
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
@@ -21,15 +32,19 @@
             <FrameLayout
                 android:id="@+id/postdetailLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
 
                 <!-- Profile picture -->
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/circleImageView"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
                     android:layout_gravity="center_horizontal|bottom"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="92dp"
+
+
                     android:src="@drawable/ic_persona"
                     app:civ_circle_background_color="@color/colorGray"
                     app:civ_border_color="@color/white"
@@ -37,65 +52,75 @@
             </FrameLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="15dp"
+                android:layout_marginBottom="55dp"
                 android:layout_gravity="center|right"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="5dp"
-                android:gravity="center"
+                android:layout_marginRight="175dp"
+
                 tools:ignore="RtlHardcoded">
 
                 <TextView
                     android:id="@+id/nameUser"
-                    android:layout_width="wrap_content"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:text="@string/redsocial"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:textSize="12sp" />
-
+                    android:textSize="20sp" />
                 <TextView
                     android:id="@+id/emailUser"
-                    android:layout_width="wrap_content"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:text="@string/redsocial"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginRight="80dp"
                     android:textColor="@color/white"
-                    android:textSize="11sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     tools:ignore="TextSizeCheck" />
-                <TextView
-                    android:id="@+id/insta"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/redsocial"
-                    android:textColor="@color/white"
-                    android:textSize="11sp"
-                    android:textStyle="bold"
-                    tools:ignore="TextSizeCheck" />
+
 
 
             </LinearLayout>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
+
+    <ImageView
+        android:id="@+id/fabComentar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_comentario"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="20dp"
+        android:padding="7dp"/>
+
     <!-- Main Content -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:padding="@dimen/default_padding">
+        android:padding="@dimen/default_padding"
+        android:background="@color/white">
+
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@color/white">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="320dp"
-                android:orientation="vertical">
+                android:layout_height="220dp"
+                android:orientation="vertical"
+               >
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/viewPager"
                     android:layout_width="match_parent"
@@ -104,32 +129,28 @@
                     android:clipChildren="false"
                     android:paddingStart="16dp"
                     android:paddingEnd="5dp"
-                    android:overScrollMode="never" />
+                    android:overScrollMode="never"
+                    android:translationY="-30dp"/>
+
                 <com.google.android.material.tabs.TabLayout
                     android:id="@+id/tabLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
+                    android:translationY="-40dp"
                     app:tabIndicatorColor="@color/primary1"
                     app:tabIndicatorHeight="4dp" />
-                <ImageView
-                    android:id="@+id/fabComentar"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_comentario"
-                    android:scaleType="centerCrop"
-                    android:layout_margin="30dp"
-                    android:layout_gravity="end|bottom"
-                    android:padding="7dp"/>
+
 
             </LinearLayout>
             <!-- Post Details -->
+
+
             <TextView
                 android:id="@+id/lugar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorGray"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp" />
@@ -138,7 +159,7 @@
                 android:id="@+id/categoria"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorGray"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp" />
@@ -147,7 +168,7 @@
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorGray"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 android:layout_marginBottom="8dp" />
 
@@ -155,7 +176,7 @@
                 android:id="@+id/duracion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorGray"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 android:layout_marginBottom="8dp" />
 
@@ -163,7 +184,7 @@
                 android:id="@+id/presupuesto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorGray"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 android:layout_marginBottom="8dp" />
 
@@ -174,13 +195,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
+                app:cardElevation="4dp"
+                android:background="@color/primary1">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="8dp">
+                    android:padding="8dp"
+                    android:background="@color/primary1">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -207,10 +230,12 @@
             <!-- Botón para eliminar post -->
             <Button
                 android:id="@+id/btnEliminarPost"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Eliminar Post"
                 android:layout_marginTop="16dp"
+                app:cornerRadius="20dp"
+                android:background="@drawable/botton_eliminar"
                 android:layout_gravity="center_horizontal"/>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

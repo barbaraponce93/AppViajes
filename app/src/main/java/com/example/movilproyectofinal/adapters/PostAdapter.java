@@ -118,6 +118,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
                         ArrayList<String> imageUrls = new ArrayList<>(post.getImagenes());
                         intent.putStringArrayListExtra("imagenes", imageUrls);
 
+                        intent.putExtra("SOURCE_ACTIVITY", "HOME"); // Agregar esto
                         holder.itemView.getContext().startActivity(intent);
                     });
                 }
@@ -166,6 +167,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
                     ArrayList<String> imageUrls = new ArrayList<>(post.getImagenes());
                     intent.putStringArrayListExtra("imagenes", imageUrls);
 
+                    intent.putExtra("SOURCE_ACTIVITY", "PROFILE");//indican la Activity de origen. lo uso para el retroceso
                     holder.itemView.getContext().startActivity(intent);
                 });
             }

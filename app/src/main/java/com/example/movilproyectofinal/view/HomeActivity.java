@@ -2,6 +2,7 @@ package com.example.movilproyectofinal.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -33,6 +34,24 @@ public class HomeActivity extends AppCompatActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+        String fragmentToLoad = getIntent().getStringExtra("FRAGMENT_TO_LOAD");
+        Log.d("HomeActivity", "onCreate() called");
+        Log.d("HomeActivity", "fragmentToLoad: " + fragmentToLoad);
+        if ("PROFILE".equals(fragmentToLoad)) {
+            Log.d("HomeActivity", "Loading PerfilFragment");
+            loadFragment(new PerfilFragment());
+            binding.bottomNavigationView.setSelectedItemId(R.id.nav_perfil); // Actualizar el BottomNavigationView
+        } else if ("HOME".equals(fragmentToLoad)) {
+            Log.d("HomeActivity", "Loading HomeFragment");
+            loadFragment(new HomeFragment());
+            binding.bottomNavigationView.setSelectedItemId(R.id.nav_home); // Actualizar el BottomNavigationView
+        } else {
+            // Cargar HomeFragment por defecto si no hay extra
+            loadFragment(new HomeFragment());
+            binding.bottomNavigationView.setSelectedItemId(R.id.nav_home); // Actualizar el BottomNavigationView
+        }
+
         // Configurar el BottomNavigationView
         binding.bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -50,16 +69,24 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        // Abrir el fragmento inicial
-        openFragment(HomeFragment.newInstance("",""));
-
-
+        // Configurar el FloatingActionButton
         binding.buttonFloating.setOnClickListener(v -> {
             Intent intent = new Intent(this, PostActivity.class);
             startActivity(intent);
         });
 
+
+
     }
+
+    private void loadFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, fragment) // Reemplaza fragment_container con el ID del contenedor de tu Fragment
+                .commit();
+    }
+
+
+
 
 
     private void openFragment(Fragment fragment) {

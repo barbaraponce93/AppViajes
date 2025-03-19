@@ -15,16 +15,16 @@ dimen activity_vertical_margin
 dimen collapsing_toolbar_height
 dimen default_padding
 dimen recycler_original_height
-drawable arc_1
 drawable arrow_circle_left
 drawable arrow_circle_left_white
-drawable back_bottom
 drawable back_round
 drawable bordeprueba
 drawable bottom_app_bar_bg
+drawable botton_eliminar
 drawable candado_login
 drawable circulo_back
 drawable contrasenia_login
+drawable detail3
 drawable edittext_bkg
 drawable flecha_izquierda
 drawable headerbkg
@@ -123,6 +123,7 @@ id tab_layout
 id text1
 id title_posts
 id tools
+id toolsDetail
 id tools_filtro
 id tvDescripcion
 id tvTitulo
@@ -194,6 +195,7 @@ string title_activity_home
 string title_dashboard
 string title_home
 string title_notifications
+string titulo_detail
 string titulo_perfil
 string titulo_post
 string titulo_ppal

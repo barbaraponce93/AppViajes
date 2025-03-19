@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
@@ -48,9 +49,6 @@ public final class ActivityPostDetailBinding implements ViewBinding {
   public final ImageView fabComentar;
 
   @NonNull
-  public final TextView insta;
-
-  @NonNull
   public final TextView lugar;
 
   @NonNull
@@ -69,16 +67,18 @@ public final class ActivityPostDetailBinding implements ViewBinding {
   public final TabLayout tabLayout;
 
   @NonNull
+  public final Toolbar toolsDetail;
+
+  @NonNull
   public final ViewPager2 viewPager;
 
   private ActivityPostDetailBinding(@NonNull CoordinatorLayout rootView,
       @NonNull Button btnEliminarPost, @NonNull TextView categoria,
       @NonNull CircleImageView circleImageView, @NonNull TextView description,
       @NonNull TextView duracion, @NonNull TextView emailUser, @NonNull ImageView fabComentar,
-      @NonNull TextView insta, @NonNull TextView lugar, @NonNull TextView nameUser,
-      @NonNull FrameLayout postdetailLayout, @NonNull TextView presupuesto,
-      @NonNull RecyclerView recyclerComentarios, @NonNull TabLayout tabLayout,
-      @NonNull ViewPager2 viewPager) {
+      @NonNull TextView lugar, @NonNull TextView nameUser, @NonNull FrameLayout postdetailLayout,
+      @NonNull TextView presupuesto, @NonNull RecyclerView recyclerComentarios,
+      @NonNull TabLayout tabLayout, @NonNull Toolbar toolsDetail, @NonNull ViewPager2 viewPager) {
     this.rootView = rootView;
     this.btnEliminarPost = btnEliminarPost;
     this.categoria = categoria;
@@ -87,13 +87,13 @@ public final class ActivityPostDetailBinding implements ViewBinding {
     this.duracion = duracion;
     this.emailUser = emailUser;
     this.fabComentar = fabComentar;
-    this.insta = insta;
     this.lugar = lugar;
     this.nameUser = nameUser;
     this.postdetailLayout = postdetailLayout;
     this.presupuesto = presupuesto;
     this.recyclerComentarios = recyclerComentarios;
     this.tabLayout = tabLayout;
+    this.toolsDetail = toolsDetail;
     this.viewPager = viewPager;
   }
 
@@ -166,12 +166,6 @@ public final class ActivityPostDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.insta;
-      TextView insta = ViewBindings.findChildViewById(rootView, id);
-      if (insta == null) {
-        break missingId;
-      }
-
       id = R.id.lugar;
       TextView lugar = ViewBindings.findChildViewById(rootView, id);
       if (lugar == null) {
@@ -208,6 +202,12 @@ public final class ActivityPostDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.toolsDetail;
+      Toolbar toolsDetail = ViewBindings.findChildViewById(rootView, id);
+      if (toolsDetail == null) {
+        break missingId;
+      }
+
       id = R.id.viewPager;
       ViewPager2 viewPager = ViewBindings.findChildViewById(rootView, id);
       if (viewPager == null) {
@@ -215,8 +215,8 @@ public final class ActivityPostDetailBinding implements ViewBinding {
       }
 
       return new ActivityPostDetailBinding((CoordinatorLayout) rootView, btnEliminarPost, categoria,
-          circleImageView, description, duracion, emailUser, fabComentar, insta, lugar, nameUser,
-          postdetailLayout, presupuesto, recyclerComentarios, tabLayout, viewPager);
+          circleImageView, description, duracion, emailUser, fabComentar, lugar, nameUser,
+          postdetailLayout, presupuesto, recyclerComentarios, tabLayout, toolsDetail, viewPager);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

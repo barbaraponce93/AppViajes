@@ -27,6 +27,8 @@
     <string name="redsocial">Instagram</string>
     <string name="imagen_description">Describe tu imagen</string>
         <string name="titulo_ppal">Comparte tu aventura</string>
+
+    <string name="titulo_detail">Publicaciones</string>
     <string name="titulo_post">Lugar que Visitaste</string>
     <string name="lugar">Lugar</string>
     <string name="comienzaUnChat">Comunicate</string>

@@ -55,6 +55,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
+    <string name="titulo_detail">Publicaciones</string>
     <string name="titulo_perfil">Modifica tus datos</string>
     <string name="titulo_post">Lugar que Visitaste</string>
     <string name="titulo_ppal">Comparte tu aventura</string>

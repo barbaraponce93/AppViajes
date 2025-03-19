@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:2:1-54:12
 MERGED from [org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0] C:\Users\Pc\.gradle\caches\8.9\transforms\e6e72bae3b336233f8419d577430de97\transformed\jetified-whynotimagecarousel-2.1.0-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.databinding:viewbinding:8.7.2] C:\Users\Pc\.gradle\caches\8.9\transforms\4d8bf4606840012ac9f767dd1c942422\transformed\jetified-viewbinding-8.7.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.6.0] C:\Users\Pc\.gradle\caches\8.9\transforms\85e21a104256ed73b8fc3be4551ac15f\transformed\navigation-common-2.6.0\AndroidManifest.xml:17:1-22:12
@@ -105,8 +105,8 @@ MERGED from [com.github.parse-community.Parse-SDK-Android:parse:4.3.0] C:\Users\
 	android:name
 		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:9:22-76
 application
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:11:5-51:19
-INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:11:5-51:19
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:11:5-52:19
+INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:11:5-52:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Pc\.gradle\caches\8.9\transforms\ef5809c922570f5356befac538167c7c\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Pc\.gradle\caches\8.9\transforms\ef5809c922570f5356befac538167c7c\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\Pc\.gradle\caches\8.9\transforms\de6c8f6fd059e49c3c3bc134ff048dd9\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -160,59 +160,61 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.13.1] C:\Users\Pc\.gradle\ca
 	android:name
 		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:12:9-43
 activity#com.example.movilproyectofinal.view.PostDetailActivity
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:22:9-24:40
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:22:9-25:72
 	android:exported
 		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:24:13-37
+	android:theme
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:25:13-69
 	android:name
 		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:23:13-52
 activity#com.example.movilproyectofinal.view.PostActivity
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:25:9-27:40
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:27:13-37
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:26:13-46
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:27:13-46
 activity#com.example.movilproyectofinal.view.HomeActivity
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:28:9-31:59
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:29:9-32:59
 	android:label
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:31:13-56
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:32:13-56
 	android:exported
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:30:13-37
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:29:13-46
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:30:13-46
 activity#com.example.movilproyectofinal.view.Login
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:32:9-40:20
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:33:9-41:20
 	android:exported
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:34:13-36
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:35:13-36
 	android:name
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:33:13-39
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:34:13-39
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:35:13-39:29
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:36:17-69
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:36:25-66
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:38:17-77
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:38:27-74
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:39:27-74
 meta-data#com.parse.SERVER_URL
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:42:9-44:59
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:43:9-45:59
 	android:value
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:44:13-56
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:45:13-56
 	android:name
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:43:13-48
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:44:13-48
 meta-data#com.parse.APPLICATION_ID
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:45:9-47:55
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:46:9-48:55
 	android:value
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:48:13-52
+	android:name
 		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:47:13-52
-	android:name
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:46:13-52
 meta-data#com.parse.CLIENT_KEY
-ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:48:9-50:59
+ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:49:9-51:59
 	android:value
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:50:13-56
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:51:13-56
 	android:name
-		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:49:13-48
+		ADDED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml:50:13-48
 uses-sdk
 INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Desktop\Movil\app\src\main\AndroidManifest.xml

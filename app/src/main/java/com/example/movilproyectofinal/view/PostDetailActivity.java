@@ -1,6 +1,8 @@
 package com.example.movilproyectofinal.view;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -13,11 +15,13 @@ import com.example.movilproyectofinal.adapters.ComentarioAdapter;
 import com.example.movilproyectofinal.adapters.EfectoTransformer;
 import com.example.movilproyectofinal.adapters.ImageSliderAdapter;
 import com.example.movilproyectofinal.databinding.ActivityPostDetailBinding;
+import com.example.movilproyectofinal.view.fragments.PerfilFragment;
 import com.example.movilproyectofinal.viewModel.PostDetailViewModel;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.parse.ParseUser;
 import com.squareup.picasso.Picasso;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -42,17 +46,12 @@ public class PostDetailActivity extends AppCompatActivity {
         setupObservers();
         postId = getIntent().getStringExtra("idPost");
 
-        if (postId == null) {
-            Log.e("PostDetailActivity", "postId es null");
-            finish(); // O maneja el error adecuadamente
-        } else {
-            Log.d("PostDetailActivity", "postId recibido: " + postId );
-        }
+
 
         if (postId != null) {
             postDetailViewModel.fetchCommentario(postId);
         }
-//////////
+
         binding.recyclerComentarios.setLayoutManager(new LinearLayoutManager(this));
         comentarioAdapter = new ComentarioAdapter(new ArrayList<>());
         binding.recyclerComentarios.setAdapter(comentarioAdapter);
@@ -72,11 +71,39 @@ public class PostDetailActivity extends AppCompatActivity {
         } else {
             binding.btnEliminarPost.setVisibility(View.GONE);
         }
-/////////////////////////////////////////////////////
-
 
         binding.fabComentar.setOnClickListener(v -> comentar());
+
+
+        Toolbar toolbar = findViewById(R.id.toolsDetail);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Habilita el botón de retroceso
+
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            String sourceActivity = getIntent().getStringExtra("SOURCE_ACTIVITY");
+            Intent intent;
+            if ("PROFILE".equals(sourceActivity)) {
+                intent = new Intent(this, HomeActivity.class);
+                intent.putExtra("FRAGMENT_TO_LOAD", "PROFILE");
+            } else {
+                intent = new Intent(this, HomeActivity.class);
+                intent.putExtra("FRAGMENT_TO_LOAD", "HOME");
+            }
+            startActivity(intent);
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+
+
 
 
 
@@ -151,7 +178,6 @@ public class PostDetailActivity extends AppCompatActivity {
     private void detailInfo() {// recibo la info del adapter para mostrar en el detail
         binding.nameUser.setText(getIntent().getStringExtra("username"));
         binding.emailUser.setText(getIntent().getStringExtra("email"));
-        binding.insta.setText(getIntent().getStringExtra("redsocial"));//esto tal vez lo saque
 
         String fotoUrl = getIntent().getStringExtra("foto_perfil");
         if (fotoUrl != null) {
