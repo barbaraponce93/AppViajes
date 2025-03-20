@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
-    private List<Post> posts;
+    public List<Post> posts;
     private OnPostClickListener listener; // Listener para manejar el click
     public static final int VIEW_TYPE_GRID = 1;
     public static final int VIEW_TYPE_LIST = 2;
@@ -34,7 +34,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
     // Constructor con el listener
     public PostAdapter(List<Post> posts, OnPostClickListener listener, int viewType) {
-        this.posts = posts;
+        this.posts = posts != null ? posts : new ArrayList<>(); // Inicializar con lista vacía si es null
         this.listener = listener;
         this.viewType = viewType;
     }

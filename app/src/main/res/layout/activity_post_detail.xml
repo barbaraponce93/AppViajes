@@ -43,8 +43,6 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:layout_marginBottom="60dp"
                     android:layout_marginLeft="92dp"
-
-
                     android:src="@drawable/ic_persona"
                     app:civ_circle_background_color="@color/colorGray"
                     app:civ_border_color="@color/white"
@@ -58,7 +56,6 @@
                 android:layout_marginBottom="55dp"
                 android:layout_gravity="center|right"
                 android:layout_marginRight="175dp"
-
                 tools:ignore="RtlHardcoded">
 
                 <TextView
@@ -135,9 +132,9 @@
                 <com.google.android.material.tabs.TabLayout
                     android:id="@+id/tabLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="4dp"
                     android:layout_gravity="center"
-                    android:translationY="-40dp"
+                    android:translationY="-20dp"
                     app:tabIndicatorColor="@color/primary1"
                     app:tabIndicatorHeight="4dp" />
 
@@ -208,7 +205,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Comentarios"
+                        android:text="@string/comentario"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"

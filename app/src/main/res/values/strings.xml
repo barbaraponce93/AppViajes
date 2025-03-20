@@ -15,7 +15,14 @@
     <string name="registroAqui">Registrate aqui</string>
 
 
+<!--Busqueda-->
 
+    <string name="buscarPost">Buscar publicaciones...</string>
+    <string name="buscarboton">Buscar</string>
+    <string name="titulobusqueda">Encuentra tu Aventura</string>
+
+
+    <string name="comentario">Comentarios</string>
 
 
     <string name="image_description">Describe tu imagen</string>

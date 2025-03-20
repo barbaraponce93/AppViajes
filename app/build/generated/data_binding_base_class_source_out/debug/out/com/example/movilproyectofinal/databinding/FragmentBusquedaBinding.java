@@ -4,20 +4,54 @@ package com.example.movilproyectofinal.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.movilproyectofinal.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentBusquedaBinding implements ViewBinding {
   @NonNull
   private final FrameLayout rootView;
 
-  private FragmentBusquedaBinding(@NonNull FrameLayout rootView) {
+  @NonNull
+  public final Button botonBusqueda;
+
+  @NonNull
+  public final EditText etBusqueda;
+
+  @NonNull
+  public final EditText etNoResultados;
+
+  @NonNull
+  public final ImageView fondoBusqueda;
+
+  @NonNull
+  public final RecyclerView recyclerViewFiltros;
+
+  @NonNull
+  public final Toolbar toolsBusqueda;
+
+  private FragmentBusquedaBinding(@NonNull FrameLayout rootView, @NonNull Button botonBusqueda,
+      @NonNull EditText etBusqueda, @NonNull EditText etNoResultados,
+      @NonNull ImageView fondoBusqueda, @NonNull RecyclerView recyclerViewFiltros,
+      @NonNull Toolbar toolsBusqueda) {
     this.rootView = rootView;
+    this.botonBusqueda = botonBusqueda;
+    this.etBusqueda = etBusqueda;
+    this.etNoResultados = etNoResultados;
+    this.fondoBusqueda = fondoBusqueda;
+    this.recyclerViewFiltros = recyclerViewFiltros;
+    this.toolsBusqueda = toolsBusqueda;
   }
 
   @Override
@@ -43,10 +77,50 @@ public final class FragmentBusquedaBinding implements ViewBinding {
 
   @NonNull
   public static FragmentBusquedaBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.botonBusqueda;
+      Button botonBusqueda = ViewBindings.findChildViewById(rootView, id);
+      if (botonBusqueda == null) {
+        break missingId;
+      }
 
-    return new FragmentBusquedaBinding((FrameLayout) rootView);
+      id = R.id.etBusqueda;
+      EditText etBusqueda = ViewBindings.findChildViewById(rootView, id);
+      if (etBusqueda == null) {
+        break missingId;
+      }
+
+      id = R.id.etNoResultados;
+      EditText etNoResultados = ViewBindings.findChildViewById(rootView, id);
+      if (etNoResultados == null) {
+        break missingId;
+      }
+
+      id = R.id.fondoBusqueda;
+      ImageView fondoBusqueda = ViewBindings.findChildViewById(rootView, id);
+      if (fondoBusqueda == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerViewFiltros;
+      RecyclerView recyclerViewFiltros = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewFiltros == null) {
+        break missingId;
+      }
+
+      id = R.id.toolsBusqueda;
+      Toolbar toolsBusqueda = ViewBindings.findChildViewById(rootView, id);
+      if (toolsBusqueda == null) {
+        break missingId;
+      }
+
+      return new FragmentBusquedaBinding((FrameLayout) rootView, botonBusqueda, etBusqueda,
+          etNoResultados, fondoBusqueda, recyclerViewFiltros, toolsBusqueda);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

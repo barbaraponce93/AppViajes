@@ -287,9 +287,100 @@ public class PostProvider {
         return result;
     }
 
+    public void buscarPostsPorTexto(String query, PostsCallback callback) {
+
+        ParseQuery<ParseObject> queryTitulo = ParseQuery.getQuery("Post");
+
+        queryTitulo.whereMatches("titulo", "(?i).*" + query + ".*"); // (?i) para ignorar mayúsculas y minúsculas
 
 
+        ParseQuery<ParseObject> queryDescripcion = ParseQuery.getQuery("Post");
 
+        queryDescripcion.whereMatches("descripcion", "(?i).*" + query + ".*");
+
+
+        ParseQuery<ParseObject> queryCategoria = ParseQuery.getQuery("Post");
+
+        queryCategoria.whereMatches("categoria", "(?i).*" + query + ".*");
+
+
+        List<ParseQuery<ParseObject>> queries = new ArrayList<>();
+
+        queries.add(queryTitulo);
+
+        queries.add(queryDescripcion);
+
+        queries.add(queryCategoria);
+
+
+        ParseQuery<ParseObject> mainQuery = ParseQuery.or(queries);
+
+        mainQuery.include("user");
+
+        mainQuery.include("images");
+
+
+        mainQuery.findInBackground((posts, e) -> {
+
+            if (e == null) {
+
+                List<Post> postList = new ArrayList<>();
+
+                for (ParseObject postObject : posts) {
+
+                    try {
+
+// Crear un objeto Post a partir del ParseObject
+
+                        Post post = (Post) postObject;
+
+
+// Cargar imágenes
+
+                        ParseRelation<ParseObject> relation = postObject.getRelation("images");
+
+                        try {
+
+                            List<ParseObject> images = relation.getQuery().find();
+
+                            List<String> imageUrls = new ArrayList<>();
+
+                            for (ParseObject imageObject : images) {
+
+                                imageUrls.add(imageObject.getString("url"));
+
+                            }
+
+                            post.setImagenes(imageUrls);
+
+                        } catch (ParseException parseException) {
+
+                            parseException.printStackTrace();
+
+                        }
+
+
+                        postList.add(post);
+
+                    } catch (Exception ex) {
+
+                        Log.e("ParseError", "Error al procesar el post: ", ex);
+
+                    }
+
+                }
+
+                callback.onSuccess(postList);
+
+            } else {
+
+                callback.onFailure(e);
+
+            }
+
+        });
+
+    }
 
 }
 

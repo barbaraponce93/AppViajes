@@ -102,11 +102,6 @@ public class PostDetailActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
     private void confirmaBorrar() {
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);

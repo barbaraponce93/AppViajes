@@ -48,6 +48,10 @@
         "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\fragment_logueo_tab.xml"
     },
     {
+        "merged": "com.example.movilproyectofinal.app-mergeDebugResources-47:/layout/item_comentario.xml",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/item_comentario.xml"
+    },
+    {
         "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-mergeDebugResources-47:\\layout\\item_slider_post.xml",
         "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\item_slider_post.xml"
     },

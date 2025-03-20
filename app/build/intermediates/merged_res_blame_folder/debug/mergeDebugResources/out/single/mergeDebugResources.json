@@ -12,8 +12,8 @@
         "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\primary_border_punteado.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_persona.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_persona.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_item_comentario.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/item_comentario.xml"
     },
     {
         "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_chat.xml.flat",
@@ -22,6 +22,10 @@
     {
         "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_detail3.png.flat",
         "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\detail3.png"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_persona.xml.flat",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_persona.xml"
     },
     {
         "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_item_comentario.xml.flat",

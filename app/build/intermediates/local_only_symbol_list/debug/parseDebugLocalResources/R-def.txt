@@ -58,6 +58,7 @@ drawable viewpager_bkg
 id appBarLayout
 id appBarLayout2
 id backgroundImage
+id botonBusqueda
 id bottomAppBar
 id bottomNavigationView
 id btLogin
@@ -74,10 +75,13 @@ id description
 id duracion
 id emailUser
 id email_user
+id etBusqueda
 id etDescripcion
 id etDuracion
+id etNoResultados
 id etPresupuesto
 id fabComentar
+id fondoBusqueda
 id fragment_container
 id frame_images
 id gridImage
@@ -115,6 +119,7 @@ id progress_bar
 id progress_layout
 id recyclerComentarios
 id recyclerView
+id recyclerViewFiltros
 id recyclerViewPerfil
 id recyclerViewPost
 id spinnerCategoria
@@ -123,6 +128,7 @@ id tab_layout
 id text1
 id title_posts
 id tools
+id toolsBusqueda
 id toolsDetail
 id tools_filtro
 id tvDescripcion
@@ -170,7 +176,10 @@ string app_name
 string back4app_app_id
 string back4app_client_key
 string back4app_server_url
+string buscarPost
+string buscarboton
 string cargando
+string comentario
 string comienzaUnChat
 string descripcion
 string duracion
@@ -199,6 +208,7 @@ string titulo_detail
 string titulo_perfil
 string titulo_post
 string titulo_ppal
+string titulobusqueda
 style Base.Theme.MovilProyectoFinal
 style BottomAppBarStyle
 style RoundedBottomAppBar

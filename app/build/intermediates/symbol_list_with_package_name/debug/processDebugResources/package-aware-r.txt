@@ -3364,6 +3364,7 @@ id beginning
 id below
 id bestChoice
 id blocking
+id botonBusqueda
 id bottom
 id bottomAppBar
 id bottomNavigationView
@@ -3469,8 +3470,10 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id etBusqueda
 id etDescripcion
 id etDuracion
+id etNoResultados
 id etPresupuesto
 id exitUntilCollapsed
 id expand_activities_button
@@ -3489,6 +3492,7 @@ id fitXY
 id fixed
 id flip
 id floating
+id fondoBusqueda
 id forever
 id fragment_container
 id fragment_container_view_tag
@@ -3699,6 +3703,7 @@ id ratio
 id rectangles
 id recyclerComentarios
 id recyclerView
+id recyclerViewFiltros
 id recyclerViewPerfil
 id recyclerViewPost
 id report_drawn
@@ -3814,6 +3819,7 @@ id title_posts
 id title_template
 id toggle
 id tools
+id toolsBusqueda
 id toolsDetail
 id tools_filtro
 id top
@@ -4136,6 +4142,8 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string buscarPost
+string buscarboton
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action
@@ -4148,6 +4156,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string comentario
 string comienzaUnChat
 string descripcion
 string dest_title
@@ -4299,6 +4308,7 @@ string titulo_detail
 string titulo_perfil
 string titulo_post
 string titulo_ppal
+string titulobusqueda
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

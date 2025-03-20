@@ -1,66 +1,126 @@
 package com.example.movilproyectofinal.view.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.movilproyectofinal.R;
+import com.example.movilproyectofinal.adapters.PostAdapter;
+import com.example.movilproyectofinal.model.Post;
+import com.example.movilproyectofinal.providers.PostProvider;
+import com.example.movilproyectofinal.view.HomeActivity;
+import com.example.movilproyectofinal.viewModel.BusquedaViewModel;
+import com.parse.ParseException;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link BusquedaFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class BusquedaFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private EditText etBusqueda;
+    private Button botonBusqueda;
+    private EditText etNoResultados;
+    private RecyclerView recyclerViewFiltros;
+    private PostAdapter adapter;
+    private PostProvider postProvider;
 
-    public BusquedaFragment() {
-        // Required empty public constructor
-    }
+    private BusquedaViewModel viewModel;
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment BusquedaFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static BusquedaFragment newInstance(String param1, String param2) {
-        BusquedaFragment fragment = new BusquedaFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+
+
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_busqueda, container, false);
+
+
+
+        etBusqueda = view.findViewById(R.id.etBusqueda);
+        botonBusqueda = view.findViewById(R.id.botonBusqueda);
+        etNoResultados = view.findViewById(R.id.etNoResultados);
+        recyclerViewFiltros = view.findViewById(R.id.recyclerViewFiltros);
+
+        postProvider = new PostProvider();
+        // Inicializar el Adapter con una lista vacía y el tipo de vista LIST
+        adapter = new PostAdapter(null, null, PostAdapter.VIEW_TYPE_LIST);
+        BusquedaViewModel viewModel = new ViewModelProvider(this).get(BusquedaViewModel.class);
+
+        // Configurar el LayoutManager y el Adapter en el RecyclerView
+        recyclerViewFiltros.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerViewFiltros.setAdapter(adapter);
+
+        // Observar los resultados del ViewModel
+        viewModel.getResultados().observe(getViewLifecycleOwner(), posts -> {
+            if (posts != null && !posts.isEmpty()) {
+                adapter.posts = posts;
+                adapter.notifyDataSetChanged();
+                etNoResultados.setVisibility(View.GONE);
+            } else {
+                adapter.posts = new ArrayList<>();
+                adapter.notifyDataSetChanged();
+                etNoResultados.setVisibility(View.VISIBLE);
+            }
+        });
+
+        botonBusqueda.setOnClickListener(v -> realizarBusqueda());
+
+
+
+        return view;
+    }
+
+    private void realizarBusqueda() {
+
+        String query = etBusqueda.getText().toString().trim();
+        if (!query.isEmpty()) {
+            postProvider.buscarPostsPorTexto(query, new PostProvider.PostsCallback() {
+                @Override
+                public void onSuccess(List<Post> posts) {
+                    if (posts != null && !posts.isEmpty()) {
+                        adapter.posts = posts;
+                        adapter.notifyDataSetChanged();
+                        etNoResultados.setVisibility(View.GONE); // Ocultar EditText
+                    } else {
+                        // Manejar el caso de lista vacía
+                        Log.d("BusquedaFragment", "No se encontraron resultados.");
+                        adapter.posts = new ArrayList<>(); // Limpiar la lista
+                        adapter.notifyDataSetChanged();
+                        etNoResultados.setVisibility(View.VISIBLE); // Mostrar EditText
+                        // Mostrar mensaje o imagen de lista vacía
+                    }
+                }
+
+                @Override
+                public void onFailure(ParseException e) {
+                    Log.e("BusquedaFragment", "Error en la búsqueda: " + e.getMessage());
+                    adapter.posts = new ArrayList<>();
+                    adapter.notifyDataSetChanged();
+                    etNoResultados.setVisibility(View.VISIBLE); // Mostrar EditText en caso de error
+                }
+            });
+        } else {
+            adapter.posts = new ArrayList<>();
+            adapter.notifyDataSetChanged();
+            etNoResultados.setVisibility(View.GONE); // Ocultar EditText si la búsqueda está vacía
+
+
         }
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_busqueda, container, false);
-    }
+
+
 }
