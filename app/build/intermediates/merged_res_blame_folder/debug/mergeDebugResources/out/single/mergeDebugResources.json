@@ -1,322 +1,322 @@
 [
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_fragment_inicio_sesion.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\fragment_inicio_sesion.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_flecha_izquierda.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/flecha_izquierda.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_viewpager_bkg.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\viewpager_bkg.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_primary_border_punteado.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\primary_border_punteado.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_upload1.jpg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/upload1.jpg"
+    },
+    {
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_chatcolor.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_chatcolor.xml"
+    },
+    {
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_item_slider_post.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/item_slider_post.xml"
+    },
+    {
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_upload5.jpeg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/upload5.jpeg"
     },
     {
         "merged": "com.example.movilproyectofinal.app-debug-48:/layout_item_comentario.xml.flat",
         "source": "com.example.movilproyectofinal.app-main-50:/layout/item_comentario.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_chat.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_chat.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_chat.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_chat.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_detail3.png.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\detail3.png"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_viewpager_bkg.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/viewpager_bkg.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_persona.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_persona.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_detail3.png.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/detail3.png"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_item_comentario.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\item_comentario.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_contrasenia_login.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/contrasenia_login.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_fragment_chat.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\fragment_chat.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_activity_post_detail.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\activity_post_detail.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_botton_eliminar.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/botton_eliminar.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_arrow_circle_left_white.png.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\arrow_circle_left_white.png"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_primary_border.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\primary_border.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_item_grid.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/item_grid.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-hdpi_login_mountain.jpg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-hdpi\\login_mountain.jpg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_user.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/user.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_user.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\user.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_upload1.jpg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\upload1.jpg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_progress_layaout_home.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/progress_layaout_home.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_upload5.jpeg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\upload5.jpeg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_item_slider_image.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/item_slider_image.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_edittext_bkg.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\edittext_bkg.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_fragment_logueo_tab.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\fragment_logueo_tab.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_login_image_uno.jpg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/login_image_uno.jpg"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\fragment_home.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_fragment_busqueda.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/fragment_busqueda.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_login_mountain.jpg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\login_mountain.jpg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_activity_home.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_login_image_dos.jpg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\login_image_dos.jpg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_persona.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_persona.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_login_image_uno.jpg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\login_image_uno.jpg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_close.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_close.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_dashboard_black_24dp.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\navigation_mobile_navigation.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\navigation\\mobile_navigation.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_login_image_tres.jpg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/login_image_tres.jpg"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_post.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_post.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_comentario.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_comentario.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_edittext_bkg.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/edittext_bkg.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_arrow_circle_left.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\arrow_circle_left.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_home.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_mail.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/mail.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_flecha_izquierda.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\flecha_izquierda.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_spinner_item.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/spinner_item.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_item_grid.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\item_grid.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_fragment_perfil.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/fragment_perfil.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_upload6.jpeg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\upload6.jpeg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/menu_close_menu.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/menu/close_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_close.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_close.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_bottom_app_bar_bg.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/bottom_app_bar_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\menu_close_menu.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\menu\\close_menu.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_bordeprueba.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/bordeprueba.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_item_post.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\item_post.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_back_round.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/back_round.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_arrow_circle_left_white.png.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/arrow_circle_left_white.png"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_mail.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\mail.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_login_mountain.jpg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/login_mountain.jpg"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_progress_layout.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\progress_layout.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_fragment_logueo_tab.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/fragment_logueo_tab.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_upload3.jpg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\upload3.jpg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_upload6.jpeg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/upload6.jpeg"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_progress_layout.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/progress_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_bottom_app_bar_bg.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\bottom_app_bar_bg.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_activity_login.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/navigation_mobile_navigation.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/navigation/mobile_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_candado_login.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\candado_login.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_candado_login.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/candado_login.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_spinner_item.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\spinner_item.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_primary_border_punteado.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/primary_border_punteado.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_item_slider_post.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\item_slider_post.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/xml_backup_rules.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\color_bottom_nav_color.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\color\\bottom_nav_color.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_upload3.jpg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/upload3.jpg"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_lupa1.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_lupa1.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_item_post.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/item_post.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\menu_perfil_menu.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\menu\\perfil_menu.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_primary_border.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/primary_border.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_icon_add.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\icon_add.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_arrow_circle_left.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/arrow_circle_left.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_headerbkg.png.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\headerbkg.png"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_fragment_chat.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/fragment_chat.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_circulo_back.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\circulo_back.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_item_image.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/item_image.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_lupa1.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_lupa1.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_fragment_inicio_sesion.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/fragment_inicio_sesion.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_notifications_black_24dp.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_activity_post.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/activity_post.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_upload2.jpg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\upload2.jpg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_home.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_home.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_upload2.jpg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/upload2.jpg"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_back_round.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\back_round.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_icon_add.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/icon_add.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\menu_bottom_menu.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\menu\\bottom_menu.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_headerbkg.png.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/headerbkg.png"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_bordeprueba.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\bordeprueba.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_tab_bkg.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\tab_bkg.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_login_image_dos.jpg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/login_image_dos.jpg"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_tab_bkg.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/tab_bkg.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_login_image_tres.jpg.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\login_image_tres.jpg"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/menu_bottom_menu.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/menu/bottom_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_item_image.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\item_image.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_ic_comentario.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/ic_comentario.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_item_slider_image.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\item_slider_image.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/layout_fragment_home.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_ic_post.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\ic_post.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/drawable_circulo_back.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/drawable/circulo_back.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_activity_home.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\activity_home.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-hdpi_login_mountain.jpg.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-hdpi/login_mountain.jpg"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_activity_post.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\activity_post.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/menu_perfil_menu.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/menu/perfil_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_fragment_perfil.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\fragment_perfil.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_fragment_busqueda.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\fragment_busqueda.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_contrasenia_login.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\contrasenia_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\drawable_botton_eliminar.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\drawable\\botton_eliminar.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\xml\\backup_rules.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.example.movilproyectofinal.app-debug-48:/layout_activity_post_detail.xml.flat",
         "source": "com.example.movilproyectofinal.app-main-50:/layout/activity_post_detail.xml"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\layout\\activity_login.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-debug-48:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Pc\\.gradle\\daemon\\8.9\\com.example.movilproyectofinal.app-main-50:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.movilproyectofinal.app-debug-48:/color_bottom_nav_color.xml.flat",
+        "source": "com.example.movilproyectofinal.app-main-50:/color/bottom_nav_color.xml"
     }
 ]

@@ -90,7 +90,9 @@ public class PostActivity extends AppCompatActivity {
         postViewModel.getPostSuccess().observe(this, exito -> {
             String mensaje = exito ? "Post publicado con éxito" : "Hubo un error al publicar el post";
             Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
-            finish();
+            if (exito) {
+                finish(); // Cierra PostActivity y envía el resultado a HomeActivity
+            }
         });
     }
 
@@ -179,7 +181,13 @@ public class PostActivity extends AppCompatActivity {
         post.setCategoria(categoria);
         post.setPresupuesto(presupuesto);
         post.setImagenes(new ArrayList<>(imagenesUrls));
+
         postViewModel.publicar(post);
+
+        // 🔹 Enviar un resultado a HomeActivity para que actualice HomeFragment
+        Intent resultIntent = new Intent();
+        resultIntent.putExtra("POST_PUBLICADO", true);
+        setResult(Activity.RESULT_OK, resultIntent);
     }
 
     public void updateRecyclerViewVisibility() {

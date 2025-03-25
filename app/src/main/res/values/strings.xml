@@ -40,6 +40,7 @@
     <string name="lugar">Lugar</string>
     <string name="comienzaUnChat">Comunicate</string>
     <string name="cargando">Cargando datos...</string>
+    <string name="cargandohome">Cargando los post</string>
 
 
     <string name="descripcion">Descripción de tu experiencia...</string>

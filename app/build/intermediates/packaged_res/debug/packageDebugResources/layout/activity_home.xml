@@ -45,6 +45,17 @@
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
+
+    <!--Contenedor del progress bar-->
+    <LinearLayout
+        android:id="@+id/cont_progress"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button_floating"
         android:layout_width="wrap_content"

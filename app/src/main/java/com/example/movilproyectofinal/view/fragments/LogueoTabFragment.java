@@ -39,25 +39,25 @@ public class LogueoTabFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        // Creamos vm
+
         viewModel = new ViewModelProvider(this).get(RegisterViewModel.class);
 
-        //Observa los resultados del registro.Si es exitoso o fallido, se ejecutará este bloque de código.
-        viewModel.getRegisterResult().observe(getViewLifecycleOwner(), result -> {//result contendrá el objectId del usuario registrado si tuvo éxito, o null si falló.
-            // Ocultar ProgressBar y habilitar el botón
+        //Observa los resultados del registro.Si es exitoso (id) o fallido(null)
+        viewModel.getRegisterResult().observe(getViewLifecycleOwner(), result -> {
+
             binding.progressBar.setVisibility(View.GONE);
             binding.btRegistrar.setEnabled(true);
 
             if (result != null) {
-                Snackbar.make(binding.getRoot(), "🎉 Registro exitoso, ¡Bienvenido!", Snackbar.LENGTH_INDEFINITE)//EL CARTELITO SE MUESTRA HASTA QUE EL USUARIO INTERACTUE
+                Snackbar.make(binding.getRoot(), "🎉 Registro exitoso, ¡Bienvenido!", Snackbar.LENGTH_LONG)// HASTA QUE EL USUARIO INTERACTUE
                         .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.primary1))
                         .setTextColor(ContextCompat.getColor(requireContext(), android.R.color.white))
                         .show();
 
-                // Cambiar al fragmento de inicio de sesión después del registro exitoso
                 irAlFragmentDeInicioSesion();
+
             } else {
-                Snackbar.make(binding.getRoot(), "❌ Error en el registro, intenta nuevamente", Snackbar.LENGTH_INDEFINITE)
+                Snackbar.make(binding.getRoot(), "❌ Error en el registro, intenta nuevamente", Snackbar.LENGTH_LONG)
                         .setBackgroundTint(ContextCompat.getColor(requireContext(), android.R.color.holo_red_light))
                         .setTextColor(ContextCompat.getColor(requireContext(), android.R.color.white))
                         .show();
@@ -79,6 +79,10 @@ public class LogueoTabFragment extends Fragment {
         String email = binding.itEmail.getText().toString().trim();
         String pass = binding.itPassword.getText().toString().trim();
         String pass1 = binding.itPassword1.getText().toString().trim();
+        Log.d("LogueoTabFragment", "Intentando registrar usuario:");
+        Log.d("LogueoTabFragment", "Username: " + usuario);
+        Log.d("LogueoTabFragment", "Email: " + email);
+        Log.d("LogueoTabFragment", "Password: " + pass);
 
         // Validaciones
         if (!Validaciones.validarTexto(usuario)) {
@@ -111,18 +115,14 @@ public class LogueoTabFragment extends Fragment {
 
 
     private void irAlFragmentDeInicioSesion() {
-        //getActivity() devuelve la Activity a la que está asociado el Fragment.
-        //instanceof verifica si getActivity() es una instancia de Login
+
         if (getActivity() instanceof Login) {
-        //    Como sabemos  getActivity()  es de tipo Login (gracias al instanceof), lo convertimos (cast) a Login
-        //esto nos permite acceder a los métodos específicos de Login, como cambiarATabInicioSesion()
+
             ((Login) getActivity()).cambiarATabInicioSesion();
         }
 
         //mas claro: Si la Activity de este Fragment es Login, entonces ejecuta el método cambiarATabInicioSesion().
     }
-
-
 
 
     private void showToast(String message) {
@@ -132,6 +132,6 @@ public class LogueoTabFragment extends Fragment {
     @Override
     public void onDestroyView() {// esto no lo uso ver ... deberia ver como lo uso la profe!
         super.onDestroyView();
-        binding = null; // Evitar memory leaks
+        binding = null;
     }
 }

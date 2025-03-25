@@ -5,7 +5,10 @@ import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
+import com.example.movilproyectofinal.model.Post;
 import com.example.movilproyectofinal.providers.PostProvider;
+import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
@@ -17,6 +20,7 @@ public class PostDetailViewModel extends ViewModel {
     private final MutableLiveData<String> errorLiveData = new MutableLiveData<>();
     private final MutableLiveData<String> successLiveData = new MutableLiveData<>();
     private final PostProvider postProvider;
+    private Post post; // Variable de instancia para almacenar el Post
 
     public PostDetailViewModel() {
         postProvider = new PostProvider();
@@ -46,6 +50,7 @@ public class PostDetailViewModel extends ViewModel {
                 errorLiveData.postValue(e.getMessage());
             }
         });
+
     }
 
     public void eliminarPost(String postId) {
@@ -67,6 +72,10 @@ public class PostDetailViewModel extends ViewModel {
                 errorLiveData.postValue(e.getMessage());
             }
         });
+    }
+
+    public Post getPost() {
+        return post;
     }
 }
 

@@ -15,6 +15,7 @@ import com.example.movilproyectofinal.adapters.ComentarioAdapter;
 import com.example.movilproyectofinal.adapters.EfectoTransformer;
 import com.example.movilproyectofinal.adapters.ImageSliderAdapter;
 import com.example.movilproyectofinal.databinding.ActivityPostDetailBinding;
+import com.example.movilproyectofinal.view.fragments.ChatFragment;
 import com.example.movilproyectofinal.view.fragments.PerfilFragment;
 import com.example.movilproyectofinal.viewModel.PostDetailViewModel;
 import com.google.android.material.tabs.TabLayoutMediator;
@@ -77,7 +78,8 @@ public class PostDetailActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolsDetail);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Habilita el botón de retroceso
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //  retroceso
+
 
     }
 
@@ -151,7 +153,7 @@ public class PostDetailActivity extends AppCompatActivity {
         alert.setNegativeButton("Cancelar", (dialog, which) -> dialog.dismiss());//dialog.dismiss() cierra el cuadro de diálogo.
 
         alert.show();
-    }//esete metodo nos va a mostrar el cuadro de dialogo por el que el usuario podra comentar.
+    }//nos va a mostrar el cuadro de dialogo por el que el usuario podra comentar.
 
     private void setupObservers() {
         postDetailViewModel.getCommentsLiveData().observe(this, comments -> {

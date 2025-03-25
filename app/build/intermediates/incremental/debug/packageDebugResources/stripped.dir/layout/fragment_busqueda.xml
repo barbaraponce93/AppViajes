@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.BusquedaFragment"
+    >
+
+    <ImageView
+        android:id="@+id/fondoBusqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="635dp"
+        android:src="@drawable/login_mountain"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="110dp"
+   />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- AppBarLayout for the header -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolsBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:title="@string/titulobusqueda"
+
+
+
+        />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etBusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/buscarPost"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/botonBusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buscarboton" />
+
+
+        <EditText
+            android:id="@+id/etNoResultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="No hay resultados para tu búsqueda"
+            android:gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:longClickable="false"
+            />
+
+        <!-- RecyclerView para mostrar los posts filtrados -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFiltros"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</FrameLayout>
+

@@ -29,10 +29,7 @@ public class InicioSesionFragment extends Fragment {
         return binding.getRoot();
     }
 
-    //onViewCreated se llama después de que la vista del fragmento ha sido creada,
-    // pero antes de que el fragmento sea visible para el usuario.
-    // se usa para: -nicializar variables y objetos relacionados con la vista.
-    //- Configurar listeners -Observar LiveData y manejar datos dinámicos. -Modificar la UI antes de que se muestre al usuario.
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {

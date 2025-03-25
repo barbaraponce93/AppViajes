@@ -35,6 +35,8 @@ public class MyApplication extends Application {
         ParseObject.registerSubclass(User.class);
         ParseObject.registerSubclass(Post.class);
 
+
+
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId(getString(R.string.back4app_app_id))
                 .clientKey(getString(R.string.back4app_client_key))

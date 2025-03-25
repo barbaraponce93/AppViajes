@@ -3,6 +3,7 @@ package com.example.movilproyectofinal.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -34,6 +35,14 @@ public class HomeActivity extends AppCompatActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+        //progress bar
+        LayoutInflater layoutInflater = LayoutInflater.from(this);
+        View viewProgresBar = layoutInflater.inflate(R.layout.progress_layout, binding.contProgress, false);
+        binding.contProgress.addView(viewProgresBar);
+
+        // Cargar fragmento inicial
+        loadInitialFragment();
 
         String fragmentToLoad = getIntent().getStringExtra("FRAGMENT_TO_LOAD");
         Log.d("HomeActivity", "onCreate() called");
@@ -72,16 +81,28 @@ public class HomeActivity extends AppCompatActivity {
         // Configurar el FloatingActionButton
         binding.buttonFloating.setOnClickListener(v -> {
             Intent intent = new Intent(this, PostActivity.class);
-            startActivity(intent);
+            startActivityForResult(intent, 100); // 100 es un código de solicitud
         });
 
 
 
     }
 
+
+    private void loadInitialFragment() {
+        String fragmentToLoad = getIntent().getStringExtra("FRAGMENT_TO_LOAD");
+        if ("PROFILE".equals(fragmentToLoad)) {
+            loadFragment(new PerfilFragment());
+            binding.bottomNavigationView.setSelectedItemId(R.id.nav_perfil);
+        } else {
+            loadFragment(new HomeFragment()); // Carga `HomeFragment` por defecto
+            binding.bottomNavigationView.setSelectedItemId(R.id.nav_home);
+        }
+    }
+
     private void loadFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_container, fragment) // Reemplaza fragment_container con el ID del contenedor de tu Fragment
+                .replace(R.id.fragment_container, fragment)
                 .commit();
     }
 
@@ -101,6 +122,19 @@ public class HomeActivity extends AppCompatActivity {
         View progressBarLayout = findViewById(R.id.progress_layout);
         if (progressBarLayout != null) {
             progressBarLayout.setVisibility(View.GONE);
+        }
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 100 && resultCode == RESULT_OK) {
+            if (data != null && data.getBooleanExtra("POST_PUBLICADO", false)) {
+                Log.d("HomeActivity", "Post publicado, recargando HomeFragment");
+                loadFragment(new HomeFragment()); // 🔹 Recargar HomeFragment
+            }
         }
     }
 

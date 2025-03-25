@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.LogueoTabFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="643dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/login_image_tres" />
+
+        <EditText
+
+            android:id="@+id/itUsuario"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawableLeft="@drawable/user"
+            android:hint="@string/nombre"
+            android:padding="8dp" />
+
+
+        <EditText
+
+            android:id="@+id/itEmail"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawableLeft="@drawable/mail"
+            android:hint="@string/email"
+            android:padding="8dp" />
+
+
+        <EditText
+
+            android:id="@+id/itPassword"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawableLeft="@drawable/candado_login"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+        <EditText
+
+            android:id="@+id/itPassword1"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawableLeft="@drawable/candado_login"
+            android:hint="@string/pass2"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+
+        <Button
+            android:id="@+id/btRegistrar"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/registro"
+            android:textSize="18sp"
+            app:cornerRadius="30dp" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateTint="@color/primary1"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -34,7 +34,7 @@ public class AuthProvider {
     // Registro con Parse
     public LiveData<String> signUp(User user) {
         //Crea un LiveData que guardará el resultado del registro
-        MutableLiveData<String> authResult = new MutableLiveData<>();//
+      MutableLiveData<String> authResult = new MutableLiveData<>();//
 
         //COMPROBAMOS QUE NO HAYAN DATOS NULOS
   // ACA LA COMPROBACION TAMBIEN ES REBUNDANTE PORQUE EN LogueoTabFragment SE HACEN LAS VALIDACIONES
@@ -46,17 +46,7 @@ public class AuthProvider {
             authResult.setValue(null);
             return authResult;
         }
-        //SE Crea ParseUser (solo en memoria)
-        ParseUser parseUser = new ParseUser();
-
-        // estos ternarios estan medios al dope ya que en  LogueoTabFragment se hace
-        // la validacion de que los campos esten completos
-
-        //la siguiente linea seria sufciente:parseUser.setUsername(user.getUsername());
-        //pero lo dejo con el ternario ya que es lo usaDO por la profe.
-        parseUser.setUsername(user.getUsername() != null ? user.getUsername() : "defaultUsername");
-        parseUser.setPassword(user.getPassword() != null ? user.getPassword() : "defaultPassword");
-        parseUser.setEmail(user.getEmail() != null ? user.getEmail() : "default@example.com");
+        ParseUser parseUser = ParseUser.create(ParseUser.class); //
 
 
         //enviamos el usuario en el servidor en segundo plano (es asincrono) para no bloquear la UI
@@ -75,19 +65,5 @@ public class AuthProvider {
     }
 
 
-    public LiveData<Boolean> logout() {
-        MutableLiveData<Boolean> logoutResult = new MutableLiveData<>();
-        ParseUser.logOutInBackground(e -> {
-            if (e == null) {
-                logoutResult.setValue(true);
-                Log.d("AuthProvider", "Caché eliminada y usuario desconectado.");
 
-            } else {
-
-                logoutResult.setValue(false);
-                Log.e("AuthProvider", "Error al desconectar al usuario: ", e);
-            }
-        });
-        return logoutResult;
-    }
 }

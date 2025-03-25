@@ -12,7 +12,7 @@ import com.example.movilproyectofinal.view.fragments.LogueoTabFragment;
 public class ViewPagerLoginAdapter extends FragmentStateAdapter {
 
 
-//llama al constructor de FragmentStateAdapter pasándole el FragmentManager y el Lifecycle del Login.
+
 public ViewPagerLoginAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
     super(fragmentManager, lifecycle);
 }

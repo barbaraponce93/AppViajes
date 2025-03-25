@@ -3143,6 +3143,7 @@ drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_chat
+drawable ic_chatcolor
 drawable ic_chevron_left
 drawable ic_chevron_right
 drawable ic_clear_black_24
@@ -3409,6 +3410,7 @@ id collapsing
 id compress
 id confirm_button
 id constraint
+id cont_progress
 id container
 id content
 id contentPanel
@@ -4084,6 +4086,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout previous_button_layout
+layout progress_layaout_home
 layout progress_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -4152,6 +4155,7 @@ string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
 string cargando
+string cargandohome
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern

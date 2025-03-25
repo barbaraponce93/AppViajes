@@ -33,6 +33,7 @@
     <string name="buscarPost">Buscar publicaciones...</string>
     <string name="buscarboton">Buscar</string>
     <string name="cargando">Cargando datos...</string>
+    <string name="cargandohome">Cargando los post</string>
     <string name="comentario">Comentarios</string>
     <string name="comienzaUnChat">Comunicate</string>
     <string name="descripcion">Descripción de tu experiencia...</string>

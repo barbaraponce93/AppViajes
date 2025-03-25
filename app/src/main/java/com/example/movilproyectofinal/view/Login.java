@@ -41,18 +41,16 @@ public class Login extends AppCompatActivity {
 
         viewModel = new ViewModelProvider(this) .get(LoginViewModel.class);
 
-       //Nota: Los id en snake_case se convierten a camelCase en el binding.
+
         tabLayout = binding.tabLayout;
         viewPager2 = binding.viewPager;
 
-        // se crea el adapter que va a manejar los fragmentos que se mostraran en el viewPager2
-        //FragmentManager maneja los fragmentos
-        //getLifecycle() le dice al Adapter que siga el ciclo de vida de la actividad.
+
         FragmentManager fragmentManager=getSupportFragmentManager();
         adapter=new ViewPagerLoginAdapter(fragmentManager,getLifecycle());
         viewPager2.setAdapter(adapter);
 
-        //agrego los titulos del tab
+        //agrego al tab
         tabLayout.addTab(tabLayout.newTab().setText("Iniciar sesión"));
         tabLayout.addTab(tabLayout.newTab().setText("Registrarse"));
 

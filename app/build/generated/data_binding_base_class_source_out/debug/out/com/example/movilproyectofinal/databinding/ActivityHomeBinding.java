@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -32,15 +33,20 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final FloatingActionButton buttonFloating;
 
   @NonNull
+  public final LinearLayout contProgress;
+
+  @NonNull
   public final FrameLayout fragmentContainer;
 
   private ActivityHomeBinding(@NonNull CoordinatorLayout rootView,
       @NonNull BottomAppBar bottomAppBar, @NonNull BottomNavigationView bottomNavigationView,
-      @NonNull FloatingActionButton buttonFloating, @NonNull FrameLayout fragmentContainer) {
+      @NonNull FloatingActionButton buttonFloating, @NonNull LinearLayout contProgress,
+      @NonNull FrameLayout fragmentContainer) {
     this.rootView = rootView;
     this.bottomAppBar = bottomAppBar;
     this.bottomNavigationView = bottomNavigationView;
     this.buttonFloating = buttonFloating;
+    this.contProgress = contProgress;
     this.fragmentContainer = fragmentContainer;
   }
 
@@ -89,6 +95,12 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cont_progress;
+      LinearLayout contProgress = ViewBindings.findChildViewById(rootView, id);
+      if (contProgress == null) {
+        break missingId;
+      }
+
       id = R.id.fragment_container;
       FrameLayout fragmentContainer = ViewBindings.findChildViewById(rootView, id);
       if (fragmentContainer == null) {
@@ -96,7 +108,7 @@ public final class ActivityHomeBinding implements ViewBinding {
       }
 
       return new ActivityHomeBinding((CoordinatorLayout) rootView, bottomAppBar,
-          bottomNavigationView, buttonFloating, fragmentContainer);
+          bottomNavigationView, buttonFloating, contProgress, fragmentContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

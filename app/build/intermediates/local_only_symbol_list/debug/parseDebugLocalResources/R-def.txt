@@ -29,6 +29,7 @@ drawable edittext_bkg
 drawable flecha_izquierda
 drawable headerbkg
 drawable ic_chat
+drawable ic_chatcolor
 drawable ic_close
 drawable ic_comentario
 drawable ic_dashboard_black_24dp
@@ -70,6 +71,7 @@ id button_floating
 id categoria
 id circleImageView
 id collapsing
+id cont_progress
 id conteoPublicaciones
 id description
 id duracion
@@ -158,6 +160,7 @@ layout item_image
 layout item_post
 layout item_slider_image
 layout item_slider_post
+layout progress_layaout_home
 layout progress_layout
 layout spinner_item
 menu bottom_menu
@@ -179,6 +182,7 @@ string back4app_server_url
 string buscarPost
 string buscarboton
 string cargando
+string cargandohome
 string comentario
 string comienzaUnChat
 string descripcion

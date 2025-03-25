@@ -33,8 +33,8 @@ public class RegisterViewModel extends ViewModel {
         result.observeForever(new Observer<String>() {
             @Override
             public void onChanged(String objectId) {
-                if (objectId != null) {
 
+                if (objectId != null) {
                     registerResult.setValue(objectId);
                     Log.d("RegisterViewModel", "Usuario registrado con ID: " + objectId);
                 } else {

@@ -17,7 +17,6 @@ public class LoginViewModel extends ViewModel {
         MutableLiveData<String> loginResult = new MutableLiveData<>();
         //LLAMO AL AUTHprovider  y observo su resultado
         authProvider.signIn(email, password).observeForever(userId -> {
-            //setteo el userId con el resultado que se observa en el authProvider.
             loginResult.setValue(userId);
         });
         return loginResult;// //actualizo el  loginResult segun el resultado

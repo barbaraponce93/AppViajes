@@ -4,32 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.MenuProvider;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import com.example.movilproyectofinal.R;
 import com.example.movilproyectofinal.adapters.PostAdapter;
 import com.example.movilproyectofinal.databinding.FragmentHomeBinding;
 import com.example.movilproyectofinal.model.Post;
 import com.example.movilproyectofinal.view.HomeActivity;
-import com.example.movilproyectofinal.view.Login;
-import com.example.movilproyectofinal.view.PostActivity;
 import com.example.movilproyectofinal.view.PostDetailActivity;
-import com.example.movilproyectofinal.viewModel.AuthViewModel;
 import com.example.movilproyectofinal.viewModel.PostViewModel;
 
 import java.util.ArrayList;
@@ -56,7 +44,7 @@ import java.util.List;
         @Override
         public void onResume() {
             super.onResume();
-            cargarPosts(); // Llama al método para recargar los posts
+            cargarPosts(); //recarga los posts
         }
 
         @Override
@@ -69,7 +57,7 @@ import java.util.List;
         public void onViewCreated(View view, Bundle savedInstanceState) {
             super.onViewCreated(view, savedInstanceState);
 
-            // Inicializa el ViewModel
+
             postViewModel = new ViewModelProvider(this).get(PostViewModel.class);
 
             postList = new ArrayList<>();
@@ -114,6 +102,10 @@ import java.util.List;
                     currentPage++; // Incrementa la página después de cargar los posts
                 }
                 isLoading = false; // Permite nuevas solicitudes
+                // 🔹 Oculta el ProgressBar una vez que los posts están cargados
+                if (getActivity() instanceof HomeActivity) {
+                    ((HomeActivity) getActivity()).hideProgressBar();
+                }
             });
         }
 

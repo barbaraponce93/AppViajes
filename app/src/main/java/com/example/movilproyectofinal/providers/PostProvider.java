@@ -185,32 +185,6 @@ public class PostProvider {
     }
 
 
-    public void getImagesForPost(String postId, int page, final ImagesCallback callback) {
-        ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
-        query.whereEqualTo("objectId", postId);
-
-        // Paginación: set limit y skip
-        query.setLimit(3);  // Limitar a 3 imágenes por carga
-        query.setSkip(page * 3);  // Skip según la página actual
-
-        query.findInBackground((List<Post> posts, ParseException e) -> {
-            if (e == null && posts != null && !posts.isEmpty()) {
-                List<String> imageUrls = new ArrayList<>();
-                for (Post post : posts) {
-                    imageUrls.addAll(post.getImagenes());
-                }
-                callback.onSuccess(imageUrls);
-            } else {
-                callback.onFailure(e);
-            }
-        });
-    }
-
-    // Interface de callback
-    public interface ImagesCallback {
-        void onSuccess(List<String> imageUrls);
-        void onFailure(ParseException e);
-    }
     public interface PostDetailCallback {
         void onSuccess(Post post);  // Llamado cuando el post se obtiene correctamente
         void onFailure(ParseException e);  // Llamado si ocurre un error
@@ -260,8 +234,6 @@ public class PostProvider {
         comentario.saveInBackground(callback);
         // Aquí pasas el SaveCallback al método saveInBackground()
     }
-
-
 
     public LiveData<String> deletePost(String postId) {
         MutableLiveData<String> result = new MutableLiveData<>();
@@ -323,57 +295,31 @@ public class PostProvider {
         mainQuery.findInBackground((posts, e) -> {
 
             if (e == null) {
-
                 List<Post> postList = new ArrayList<>();
-
                 for (ParseObject postObject : posts) {
-
                     try {
-
-// Crear un objeto Post a partir del ParseObject
-
+                            // Crear un objeto Post a partir del ParseObject
                         Post post = (Post) postObject;
-
-
-// Cargar imágenes
-
+                        // Cargar imágene
                         ParseRelation<ParseObject> relation = postObject.getRelation("images");
 
                         try {
-
                             List<ParseObject> images = relation.getQuery().find();
-
                             List<String> imageUrls = new ArrayList<>();
-
                             for (ParseObject imageObject : images) {
-
                                 imageUrls.add(imageObject.getString("url"));
-
                             }
-
                             post.setImagenes(imageUrls);
-
                         } catch (ParseException parseException) {
-
                             parseException.printStackTrace();
-
                         }
-
-
                         postList.add(post);
-
                     } catch (Exception ex) {
-
                         Log.e("ParseError", "Error al procesar el post: ", ex);
-
                     }
-
                 }
-
                 callback.onSuccess(postList);
-
             } else {
-
                 callback.onFailure(e);
 
             }
@@ -381,6 +327,11 @@ public class PostProvider {
         });
 
     }
+
+
+
+
+
 
 }
 
